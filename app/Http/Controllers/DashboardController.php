@@ -55,7 +55,7 @@ class DashboardController extends Controller
 
         $currentRentals = $user->rentals()
             ->with('car')
-            ->whereIn('status', ['panding', 'ongoing', 'upcoming'])
+            ->whereIn('status', ['pending', 'ongoing', 'upcoming'])
             ->orderBy('start_date')
             ->limit(3)
             ->get();

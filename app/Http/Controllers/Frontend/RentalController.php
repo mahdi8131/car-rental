@@ -70,7 +70,7 @@ public function store(Request $request)
         'start_date' => $validated['start_date'],
         'end_date'   => $validated['end_date'],
         'total_cost' => $totalCost,
-        'status'     => 'panding',
+        'status'     => 'pending',
     ]);
 
     Mail::to($rental->user->email)->send(new RentalConfirmationMail($rental));

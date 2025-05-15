@@ -14,6 +14,7 @@
 
         <!-- Contact Form -->
         <div class="bg-white p-6 rounded shadow">
+            
             <form action="" method="POST" class="space-y-4">
                 @csrf
                 <div>
